@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AIDL_Client/AIDL_Client.iml" filepath="$PROJECT_DIR$/AIDL_Client/AIDL_Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AIDL_Server/AIDL_Server.iml" filepath="$PROJECT_DIR$/AIDL_Server/AIDL_Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Application2.iml" filepath="$PROJECT_DIR$/Application2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lottie/lottie.iml" filepath="$PROJECT_DIR$/lottie/lottie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scalebutton_showdialog/scalebutton_showdialog.iml" filepath="$PROJECT_DIR$/scalebutton_showdialog/scalebutton_showdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpager_circle/viewpager_circle.iml" filepath="$PROJECT_DIR$/viewpager_circle/viewpager_circle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webview_videoplay/webview_videoplay.iml" filepath="$PROJECT_DIR$/webview_videoplay/webview_videoplay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/windowmanager_demo/windowmanager_demo.iml" filepath="$PROJECT_DIR$/windowmanager_demo/windowmanager_demo.iml" />
+    </modules>
+  </component>
+</project>

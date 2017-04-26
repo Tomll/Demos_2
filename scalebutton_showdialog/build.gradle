@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "transage.com.scalebutton_showdialog"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+
+    //Retrofit库（已内置OkHttp库，所以不用再添加OkHttp库了）
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    //Retrofit适配Gson的库（添加了这个库后不用再添加Gson库，因为已经内置）
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    //Retrofit适配Rxjava的库
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    //Rxjava库
+    compile 'io.reactivex:rxjava:1.1.0'
+    //RxAndroid库
+    compile 'io.reactivex:rxandroid:1.1.0'
+    //ButterKnife注解库
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //Gson（如果非Retrofit的地方也要使用Gson 那么则需要导入Gson库）
+    compile 'com.google.code.gson:gson:2.6.2'
+}
